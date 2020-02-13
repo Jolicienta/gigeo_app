@@ -1,0 +1,47 @@
+
+
+@mixin nombre {
+    font-family: $montserrat;
+    font-weight: $bold;
+    font-size: 26px;
+    line-height: 28px;
+}
+
+@mixin seguidores {
+    font-family: $futura;
+    font-weight: $light;
+    font-size: 18px;
+    line-height: 32px;
+    color: gray;
+}
+
+@mixin nombre_web {
+    font-family: $montserrat;
+    font-weight: $bold;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+@mixin seguidores_web {
+    font-family: $futura;
+    font-weight: $light;
+    font-size: 14px;
+    color: gray;
+}
+
+@mixin boton {
+    font-family: $montserrat;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin titulo-principal {
+    font-family: $montserrat;
+    font-weight: $regular;
+    font-size: 26px;
+}
+
+@mixin titulo-principal_web {
+    font-family: $montserrat;
+    font-weight: $regular;
+}

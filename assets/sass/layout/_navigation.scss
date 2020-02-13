@@ -1,0 +1,67 @@
+
+
+.navbar {
+    .navbar-brand {
+        font-family: $poppins;
+        weight: $regular;
+        font-size: 37px;
+        line-height: 75px;
+
+        .logo {
+            flex-direction: row;
+
+            .superindice {
+                font-size: 15px;
+                margin-top: -10px;
+            }
+        }
+    }
+
+    #margin__right {
+        margin-right: 15px;
+    }
+
+    i {
+        font-size: 20px;
+        color: #000;
+
+        &:hover {
+            color: gray;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        height: 70px;
+        justify-content: space-between;
+
+        .navbar-brand {
+            font-family: $poppins;
+            weight: $regular;
+            font-size: 30px;
+
+            .logo {
+                flex-direction: row;
+
+                .superindice {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        #margin__right {
+            margin-right: 15px;
+        }
+
+        i {
+            font-size: 20px;
+            color: #000;
+
+            &:hover {
+                color: gray;
+            }
+        }
+    }
+}

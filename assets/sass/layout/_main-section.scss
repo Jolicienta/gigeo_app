@@ -1,0 +1,140 @@
+
+
+.hero {
+    height: 120px;
+
+    .container {
+        justify-content: center;
+
+        .perfil {
+            flex-direction: row;
+            justify-content: space-between;
+
+            #pic {
+                width: 80px;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+
+            @media (max-width: 767.9px) {
+                #pic {
+                    height: 80px;
+                }
+            }
+
+            .datos {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 767.9px) {
+            .perfil {
+                @include nombre;
+
+                .seguidores {
+                    @include seguidores;
+                }
+            }
+        }
+    }
+}
+
+.videos {
+    margin-bottom: 50px;
+
+
+    @media (max-width: 767.9px) {
+        .container {
+            text-align: center;
+        }
+    }
+
+    .titulo {
+        @include titulo-principal;
+        line-height: 55px;
+        margin-bottom: 20px;
+    }
+
+    .card__deck {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+
+        .card {
+            margin-bottom: 25px;
+
+            .card-body {
+                padding: 0;
+                margin-top: 10px;
+
+                .card-text {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                @media (max-width: 767.9px) {
+                    .card-text {
+                        @include nombre;
+                        font-size: 23px;
+                    }
+
+                    .visitas {
+                        @include seguidores;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .hero {
+        height: 80px;
+        border-bottom: 1px solid silver;
+
+        .container {
+            justify-content: space-between;
+
+            .perfil {
+                justify-content: space-between;
+                @include nombre_web;
+
+                #pic {
+                    width: 60px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                }
+
+                .datos {
+                    .seguidores {
+                        @include seguidores_web;
+                    }
+                }
+            }
+        }
+    }
+
+    .videos {
+        margin-bottom: 20px;
+
+        .titulo {
+            @include titulo-principal_web;
+            line-height: 90px;
+        }
+
+        .card {
+            width: 15.7rem;
+            .card-text {
+                @include nombre_web;
+            }
+
+            .visitas {
+                @include seguidores_web;
+            }
+        }
+    }
+}

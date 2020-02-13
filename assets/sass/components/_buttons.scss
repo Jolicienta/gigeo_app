@@ -1,0 +1,27 @@
+
+@media (min-width: 768px) {
+    .botones{
+        .btn {
+            display: inline-block;
+            justify-content: space-between;
+            line-height: 33px;;
+            padding: 0;
+            width: 77px;
+            border-radius: 0;
+            color: #FFF;
+            @include boton;
+        }
+
+        #mensaje {
+            background-color: $mensaje;
+        }
+
+        #seguir {
+            background-color: $seguir;
+        }
+    }
+}
+
+.botones, .btn {
+    display: none;
+}

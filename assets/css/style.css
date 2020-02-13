@@ -1,0 +1,268 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  html .container, body .container {
+    max-width: 87vw;
+  }
+}
+html .container, body .container {
+  max-width: 80vw;
+  padding: 0;
+}
+html .row, body .row {
+  margin: 0;
+}
+html p, body p {
+  margin: 0;
+}
+html h4, body h4 {
+  margin: 0;
+}
+html .card, body .card {
+  border: none;
+}
+html .card .card-img-top, body .card .card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+html .card .card-body, body .card .card-body {
+  padding: 10px 0;
+}
+
+.navbar .navbar-brand {
+  font-family: "Poppins", sans-serif;
+  weight: 400;
+  font-size: 37px;
+  line-height: 75px;
+}
+.navbar .navbar-brand .logo {
+  flex-direction: row;
+}
+.navbar .navbar-brand .logo .superindice {
+  font-size: 15px;
+  margin-top: -10px;
+}
+.navbar #margin__right {
+  margin-right: 15px;
+}
+.navbar i {
+  font-size: 20px;
+  color: #000;
+}
+.navbar i:hover {
+  color: gray;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+  }
+  .navbar .navbar-brand {
+    font-family: "Poppins", sans-serif;
+    weight: 400;
+    font-size: 30px;
+  }
+  .navbar .navbar-brand .logo {
+    flex-direction: row;
+  }
+  .navbar .navbar-brand .logo .superindice {
+    font-size: 10px;
+  }
+  .navbar #margin__right {
+    margin-right: 15px;
+  }
+  .navbar i {
+    font-size: 20px;
+    color: #000;
+  }
+  .navbar i:hover {
+    color: gray;
+  }
+}
+header {
+  height: 80px;
+  overflow: hidden;
+}
+header .banner {
+  width: 100%;
+  margin-top: -100px;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 190px;
+  }
+  header .banner {
+    margin-top: -315px;
+  }
+}
+.hero {
+  height: 120px;
+}
+.hero .container {
+  justify-content: center;
+}
+.hero .container .perfil {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hero .container .perfil #pic {
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+@media (max-width: 767.9px) {
+  .hero .container .perfil #pic {
+    height: 80px;
+  }
+}
+.hero .container .perfil .datos {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767.9px) {
+  .hero .container .perfil {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .hero .container .perfil .seguidores {
+    font-family: "Futura-Normal", arial;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: gray;
+  }
+}
+
+.videos {
+  margin-bottom: 50px;
+}
+@media (max-width: 767.9px) {
+  .videos .container {
+    text-align: center;
+  }
+}
+.videos .titulo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+.videos .card__deck {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+}
+.videos .card__deck .card {
+  margin-bottom: 25px;
+}
+.videos .card__deck .card .card-body {
+  padding: 0;
+  margin-top: 10px;
+}
+.videos .card__deck .card .card-body .card-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (max-width: 767.9px) {
+  .videos .card__deck .card .card-body .card-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 28px;
+    font-size: 23px;
+  }
+  .videos .card__deck .card .card-body .visitas {
+    font-family: "Futura-Normal", arial;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: gray;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 80px;
+    border-bottom: 1px solid silver;
+  }
+  .hero .container {
+    justify-content: space-between;
+  }
+  .hero .container .perfil {
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .hero .container .perfil #pic {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .hero .container .perfil .datos .seguidores {
+    font-family: "Futura-Normal", arial;
+    font-weight: 300;
+    font-size: 14px;
+    color: gray;
+  }
+
+  .videos {
+    margin-bottom: 20px;
+  }
+  .videos .titulo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 90px;
+  }
+  .videos .card {
+    width: 15.7rem;
+  }
+  .videos .card .card-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .videos .card .visitas {
+    font-family: "Futura-Normal", arial;
+    font-weight: 300;
+    font-size: 14px;
+    color: gray;
+  }
+}
+@media (min-width: 768px) {
+  .botones .btn {
+    display: inline-block;
+    justify-content: space-between;
+    line-height: 33px;
+    padding: 0;
+    width: 77px;
+    border-radius: 0;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .botones #mensaje {
+    background-color: #95dae5;
+  }
+  .botones #seguir {
+    background-color: #e86253;
+  }
+}
+.botones, .btn {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

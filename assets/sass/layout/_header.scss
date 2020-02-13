@@ -1,0 +1,21 @@
+
+
+header {
+    height: 80px;
+    overflow: hidden;
+
+    .banner {
+        width: 100%;
+        margin-top: -100px;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 190px;
+
+        .banner {
+            margin-top: -315px;
+        }
+    }
+}
